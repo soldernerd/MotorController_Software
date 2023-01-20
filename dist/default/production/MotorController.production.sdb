@@ -1,0 +1,298 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18325 ]
+[d frameptr 6 ]
+"53 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\MotorController\main.c
+[e E6236 . `uc
+ADC_NOT_READY 0
+ADC_IS_READY 1
+]
+"17 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\MotorController\pwm.c
+[e E6176 . `uc
+PWM_PRESCALER_1 0
+PWM_PRESCALER_4 1
+PWM_PRESCALER_16 2
+PWM_PRESCALER_64 3
+]
+"12 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\MotorController\adc.c
+[e E6176 . `uc
+ADC_NOT_READY 0
+ADC_IS_READY 1
+]
+"18
+[v _adc_init adc_init `(v  1 e 1 0 ]
+"45
+[v _adc_read adc_read `(v  1 e 1 0 ]
+"81
+[v _adc_ready adc_ready `(E6236  1 e 1 0 ]
+"86
+[v _adc_getValue adc_getValue `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"43 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\MotorController\main.c
+[v __isr _isr `II(v  1 e 1 0 ]
+"61
+[v _init init `(v  1 e 1 0 ]
+"87
+[v _main main `(v  1 e 1 0 ]
+"9 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\MotorController\pwm.c
+[v _pwm_init pwm_init `(v  1 e 1 0 ]
+"29
+[v _pwm_set_dutycycle pwm_set_dutycycle `(v  1 e 1 0 ]
+"12 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\MotorController\adc.c
+[v _adc_status adc_status `E6176  1 e 1 0 ]
+"13
+[v _adc_value adc_value `ui  1 e 2 0 ]
+"14
+[v _adc_sum adc_sum `ui  1 e 2 0 ]
+"15
+[v _conversion_count conversion_count `uc  1 e 1 0 ]
+[s S237 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"364 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f18325.h
+[u S242 . 1 `S237 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES242  1 e 1 @11 ]
+[s S156 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+]
+"449
+[u S163 . 1 `S156 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES163  1 e 1 @14 ]
+[s S22 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 BCL1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"534
+[u S31 . 1 `S22 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES31  1 e 1 @17 ]
+"1408
+[v _PR2 PR2 `VEuc  1 e 1 @30 ]
+[s S260 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+"1449
+[s S264 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[u S272 . 1 `S260 1 . 1 0 `S264 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES272  1 e 1 @31 ]
+[s S63 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"1514
+[u S70 . 1 `S63 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES70  1 e 1 @140 ]
+[s S97 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+]
+"1559
+[u S104 . 1 `S97 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES104  1 e 1 @142 ]
+[s S469 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 BCL1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1644
+[u S478 . 1 `S469 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES478  1 e 1 @145 ]
+"1941
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"1961
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+[s S376 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :6:2 
+]
+"2007
+[s S380 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+`uc 1 CHS5 1 0 :1:7 
+]
+[s S389 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S392 . 1 `S376 1 . 1 0 `S380 1 . 1 0 `S389 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES392  1 e 1 @157 ]
+[s S413 . 1 `uc 1 ADPREF 1 0 :2:0 
+`uc 1 ADNREF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCS 1 0 :3:4 
+`uc 1 ADFM 1 0 :1:7 
+]
+"2089
+[s S419 . 1 `uc 1 ADPREF0 1 0 :1:0 
+`uc 1 ADPREF1 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 ADCS0 1 0 :1:4 
+`uc 1 ADCS1 1 0 :1:5 
+`uc 1 ADCS2 1 0 :1:6 
+]
+[u S426 . 1 `S413 1 . 1 0 `S419 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES426  1 e 1 @158 ]
+[s S80 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"2206
+[u S87 . 1 `S80 1 . 1 0 ]
+[v _LATAbits LATAbits `VES87  1 e 1 @268 ]
+[s S114 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+]
+"2251
+[u S121 . 1 `S114 1 . 1 0 ]
+[v _LATCbits LATCbits `VES121  1 e 1 @270 ]
+[s S131 . 1 `uc 1 ANSC0 1 0 :1:0 
+`uc 1 ANSC1 1 0 :1:1 
+`uc 1 ANSC2 1 0 :1:2 
+`uc 1 ANSC3 1 0 :1:3 
+`uc 1 ANSC4 1 0 :1:4 
+`uc 1 ANSC5 1 0 :1:5 
+]
+"2839
+[u S138 . 1 `S131 1 . 1 0 ]
+[v _ANSELCbits ANSELCbits `VES138  1 e 1 @398 ]
+"6048
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @657 ]
+"6068
+[v _CCPR1H CCPR1H `VEuc  1 e 1 @658 ]
+[s S325 . 1 `uc 1 CCP1MODE 1 0 :4:0 
+`uc 1 CCP1FMT 1 0 :1:4 
+`uc 1 CCP1OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 CCP1EN 1 0 :1:7 
+]
+"6108
+[s S331 . 1 `uc 1 CCP1MODE0 1 0 :1:0 
+`uc 1 CCP1MODE1 1 0 :1:1 
+`uc 1 CCP1MODE2 1 0 :1:2 
+`uc 1 CCP1MODE3 1 0 :1:3 
+]
+[u S336 . 1 `S325 1 . 1 0 `S331 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES336  1 e 1 @659 ]
+[s S293 . 1 `uc 1 C1TSEL 1 0 :2:0 
+`uc 1 C2TSEL 1 0 :2:2 
+`uc 1 C3TSEL 1 0 :2:4 
+`uc 1 C4TSEL 1 0 :2:6 
+]
+"6380
+[s S298 . 1 `uc 1 C1TSEL0 1 0 :1:0 
+`uc 1 C1TSEL1 1 0 :1:1 
+`uc 1 C2TSEL0 1 0 :1:2 
+`uc 1 C2TSEL1 1 0 :1:3 
+`uc 1 C3TSEL0 1 0 :1:4 
+`uc 1 C3TSEL1 1 0 :1:5 
+`uc 1 C4TSEL0 1 0 :1:6 
+`uc 1 C4TSEL1 1 0 :1:7 
+]
+[u S307 . 1 `S293 1 . 1 0 `S298 1 . 1 0 ]
+[v _CCPTMRSbits CCPTMRSbits `VES307  1 e 1 @671 ]
+"12314
+[v _PPSLOCK PPSLOCK `VEuc  1 e 1 @3599 ]
+[s S251 . 1 `uc 1 PPSLOCKED 1 0 :1:0 
+]
+"12324
+[u S253 . 1 `S251 1 . 1 0 ]
+[v _PPSLOCKbits PPSLOCKbits `VES253  1 e 1 @3599 ]
+"14130
+[v _RC3PPS RC3PPS `VEuc  1 e 1 @3747 ]
+"87 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\MotorController\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"89
+[v main@cntr cntr `uc  1 a 1 1 ]
+"123
+} 0
+"61
+[v _init init `(v  1 e 1 0 ]
+{
+"84
+} 0
+"9 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\MotorController\pwm.c
+[v _pwm_init pwm_init `(v  1 e 1 0 ]
+{
+"26
+} 0
+"18 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\MotorController\adc.c
+[v _adc_init adc_init `(v  1 e 1 0 ]
+{
+"43
+} 0
+"43 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\MotorController\main.c
+[v __isr _isr `II(v  1 e 1 0 ]
+{
+"58
+} 0
+"29 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\MotorController\pwm.c
+[v _pwm_set_dutycycle pwm_set_dutycycle `(v  1 e 1 0 ]
+{
+[v pwm_set_dutycycle@dutycycle dutycycle `ui  1 p 2 2 ]
+"34
+} 0
+"81 C:\Users\luke\OneDrive\EmbeddedSystems\MPLAB\MotorController\adc.c
+[v _adc_ready adc_ready `(E6236  1 e 1 0 ]
+{
+"84
+} 0
+"45
+[v _adc_read adc_read `(v  1 e 1 0 ]
+{
+"47
+[v adc_read@adc_val adc_val `ui  1 a 2 2 ]
+"79
+} 0
+"86
+[v _adc_getValue adc_getValue `(ui  1 e 2 0 ]
+{
+"92
+} 0
